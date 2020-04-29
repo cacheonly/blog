@@ -1,0 +1,59 @@
+/* purgecss start ignore */
+@tailwind base;
+/* purgecss end ignore */
+
+@tailwind components;
+
+.post-title {
+  @apply font-sans font-medium text-3xl leading-snug;
+}
+
+.post-subtitle {
+  @apply font-sans text-lg text-gray-700;
+}
+
+.post-date {
+  @apply text-xs text-gray-600 uppercase;
+}
+
+.markdown {
+  @apply font-serif text-lg text-gray-900 leading-normal;
+  & > * + *,
+  & li + li,
+  & li > p + p {
+    @apply mt-6;
+  }
+  & strong {
+    @apply font-semibold;
+  }
+  & a {
+    @apply text-indigo-600 font-semibold underline;
+  }
+  & strong a {
+    @apply font-semibold underline;
+  }
+  & h2 {
+    @apply leading-tight text-xl font-bold text-black mb-2 mt-10;
+  }
+  & h3 {
+    @apply leading-tight text-lg font-bold text-black mt-8 -mb-2;
+  }
+  & code {
+    @apply font-mono text-sm inline bg-gray-200 px-1;
+  }
+  & pre code {
+    @apply block bg-gray-200 p-4 rounded;
+  }
+  & blockquote {
+    @apply border-l-4 border-gray-400 pl-4 italic;
+  }
+  & ul,
+  & ol {
+    @apply pl-4 list-disc;
+    @screen sm {
+      @apply pl-10;
+    }
+  }
+}
+
+@tailwind utilities;
