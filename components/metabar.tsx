@@ -8,7 +8,7 @@ const Metabar = () => (
         <a className="text-indigo-600">home</a>
       </Link>{' '}
       ·{' '}
-      <a href="https://twitter.com/donaldhuh" className="text-indigo-600">
+      <a href="https://twitter.com/_cacheonly" className="text-indigo-600">
         twitter
       </a>{' '}
       ·{' '}
